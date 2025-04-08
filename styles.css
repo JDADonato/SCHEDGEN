@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Schedule Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1
+        style="
+          margin-bottom: 32px;
+          color: #1e293b;
+          font-weight: 700;
+          letter-spacing: -0.5px;
+        "
+      >
+        📅 Schedule Planner
+      </h1>
+      <div class="input-section">
+        <textarea
+          id="courseInput"
+          placeholder="Enter courses in format: Course Code Course Name Section Units Days Times Locations Example: MATH101 Calculus I SEC-01 3 M/W 09:00-10:30/14:00-15:30 Room A-12/Room B-34"
+        ></textarea>
+        <button onclick="generateSchedule()">Generate Schedule →</button>
+      </div>
+      <div id="schedule"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
